@@ -26,7 +26,7 @@ Examples:
 docker pull cloudunder/java-runtime:7
 
 # Print the version and exit:
-docker run --rm cloudunder/java-runtime:7 /usr/lib/jvm/default-jvm/jre/bin/java -version
+docker run --rm cloudunder/java-runtime:7 java -version
 ```
 
 A sample `Dockerfile` for a Play Framework application:
