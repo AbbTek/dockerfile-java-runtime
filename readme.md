@@ -4,7 +4,8 @@ A very small Docker image with a Java Runtime Environment (currently only OpenJD
 
 Of course, this image is not limited to Play apps, but that’s what we use it for.
 
-[](https://registry.hub.docker.com/u/cloudunder/java-runtime/)
+* [Image on Docker Hub](https://registry.hub.docker.com/u/cloudunder/java-runtime/)
+* [Source on GitHub](https://github.com/CloudUnder/dockerfile-java-runtime)
 
 ## Size
 
