@@ -2,6 +2,10 @@
 
 Good to go for Play Framework apps and other stuff, of course.
 
+## Latest addition: OpenJDK JRE 8
+
+Less than 150 MB. Image: `cloudunder/java-runtime:openjdk8`
+
 ## JRE 7
 
 A very small Docker image with a Java Runtime Environment (OpenJDK 7) based on [Alpine Linux](https://registry.hub.docker.com/u/gliderlabs/alpine/). We also installed the Bash shell, because we want to use this as a base image for [Play Framework](https://www.playframework.com) web applications and the standard start script of a Play app is a Bash script.
@@ -24,6 +28,7 @@ Of course, this image is not limited to Play apps, but that’s what we use it f
 
 ```
 REPOSITORY                  TAG               IMAGE ID         VIRTUAL SIZE
+cloudunder/java-runtime     openjdk8          5f6d87db84a4     146.5 MB
 cloudunder/java-runtime     7                 dc871d857866     123.5 MB
 cloudunder/java-runtime     8                 e0cde27ac86a     441.5 MB
 jeanblanchard/busybox-java  7                 f36e3fd69366     146.5 MB
