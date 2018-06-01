@@ -1,5 +1,27 @@
 # Minimal Java Runtime Environment
 
+## REPOSITORY IS NO LONGER MAINTAINED
+
+These days there is plenty of choice for Java Runtime Environments on Docker, most notably the official [openjdk](https://hub.docker.com/r/library/openjdk/) Docker repository, so there is no more need for this one.
+
+Not all base images contain Bash, which is quite convenient if you want to launch Play Framework applications with its Bash launch script, but the `*-jre-slim` images do. For example, you could use a Dockerfile like this to dockerize your Play web application:
+
+```
+FROM openjdk:8u171-jre-slim
+WORKDIR /app
+COPY target/universal/stage/ .
+COPY public/ ./public
+EXPOSE 9000
+CMD ["bin/name-of-launch-script"]
+```
+
+Good luck! This repository will now be archived.
+
+If you need a helping hand with your web project, [get in touch](https://cloudunder.io). 😉
+
+
+## General
+
 Good to go for **Play Framework** apps and other stuff, of course.
 
 > Since the [official Java repository on Docker Hub](https://hub.docker.com/_/java/) now also has minimal images based on Alpine Linux, there is not much point in maintaining this repository any longer.
